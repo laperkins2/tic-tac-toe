@@ -119,7 +119,39 @@ resetButton.onclick = function () {
 };
 
 checkWinButton.onclick = function () {
-  if (moves[0] === 'X') {
-    alert('You win');
+  if (moves[0] === 'X' && moves[1] === 'X' && moves[2] === 'X') {
+    alert('X wins');
+  } else if (moves[0] === '!X' && moves[1] === !'!X' && moves[2] === '!X') {
+    alert('O wins');
+  } else if (moves[3] === 'X' && moves[4] === 'X' && moves[5] === 'X') {
+    alert('X wins');
+  } else if (moves[3] === '!X' && moves[4] === !'!X' && moves[5] === '!X') {
+    alert('O wins');
+  } else if (moves[6] === 'X' && moves[7] === 'X' && moves[8] === 'X') {
+    alert('X wins');
+  } else if (moves[6] === '!X' && moves[7] === !'!X' && moves[8] === '!X') {
+    alert('O wins');
+  } else if (moves[0] === 'X' && moves[3] === 'X' && moves[6] === 'X') {
+    alert('X wins');
+  } else if (moves[0] === '!X' && moves[3] === !'!X' && moves[6] === '!X') {
+    alert('O wins');
+  } else if (moves[1] === 'X' && moves[4] === 'X' && moves[7] === 'X') {
+    alert('X wins');
+  } else if (moves[1] === '!X' && moves[4] === !'!X' && moves[7] === '!X') {
+    alert('O wins');
+  } else if (moves[2] === 'X' && moves[5] === 'X' && moves[8] === 'X') {
+    alert('X wins');
+  } else if (moves[2] === '!X' && moves[5] === !'!X' && moves[8] === '!X') {
+    alert('O wins');
+  } else if (moves[0] === 'X' && moves[4] === 'X' && moves[8] === 'X') {
+    alert('X wins');
+  } else if (moves[0] === '!X' && moves[4] === !'!X' && moves[8] === '!X') {
+    alert('O wins');
+  } else if (moves[2] === 'X' && moves[4] === 'X' && moves[6] === 'X') {
+    alert('X wins');
+  } else if (moves[2] === '!X' && moves[4] === !'!X' && moves[6] === '!X') {
+    alert('O wins');
+  } else {
+    alert("It's a draw, lets play again");
   }
 };
